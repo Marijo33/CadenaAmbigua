@@ -1,0 +1,37 @@
+EL CODIGO C =['a', 'c', 'ad', 'abb', 'bad', 'deb', 'bbcde']
+
+METODO DE PATTERSON-SARDINAS
+S0:
+{'deb', 'abb', 'c', 'a', 'ad', 'bbcde', 'bad'}
+
+S1:
+{'d', 'bb'}
+
+S2:
+{'cde', 'eb'}
+
+S3:
+{'de'}
+
+S4:
+{'b'}
+
+S5:
+{'bcde', 'ad'}
+
+S6:
+{'lambda', 'd'}
+
+k6 = v6 = ad
+
+ad ∈ S5, porque v4=b ∈  S4 y k4=bad ∈ C ,en la operación C/S4
+b ∈ S4, porque v3=de ∈  S3 y k3=deb ∈ C ,en la operación C/S3
+de ∈ S3, porque v2=cde ∈  S2 y k2=c ∈ C, en la operación S2/C
+cde ∈ S2, porque v1=bb ∈  S1 y k1=bbcde ∈ C ,en la operación C/S1
+bb ∈ S1, porque v0=a ∈  S0 y k0=abb ∈ C ,en la operación C/S0
+
+
+GENERANDO LA CADENA AMBIGUA
+
+cadena 1 = abb c deb ad = w4 w2 w6 w3 
+cadena 2 = a bbcde bad = w1 w7 w5 
