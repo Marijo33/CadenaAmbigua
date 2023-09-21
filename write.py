@@ -34,10 +34,11 @@ def write_nud(c,z,k,v,w1,w2,cad_1,cad_2):
   for i in range(n-1,0,-1):
     #Caso 1 (en la operación C/S)
     if(v[i-1]+v[i]==k[i-1]):
-      archivo.write(v[i] + " ∈ S"+str(i)+ ", porque v" +str(i-1) +"=" + v[i-1] + " ∈ " + " S" + str(i-1)+ " y k"+str(i-1)+ "="+k[i-1]+ " ∈ C ,en la operación C/S"+str(i-1) +"\n")
+      archivo.write(v[i] + " pertenece S"+str(i)+ ", porque v" +str(i-1) +"=" + v[i-1] + " pertenece " + " S" + str(i-1)+ " y k"+str(i-1)+ "="+k[i-1]+ " pertenece C ,en la operación C/S"+str(i-1) +"\n")
     #Caso 2 (en la operación C/S)
     else:
-      archivo.write(str(v[i]) + " ∈ S"+str(i)+ ", porque v" +str(i-1) +"=" + v[i-1] + " ∈ " + " S" + str(i-1)+ " y k"+str(i-1)+ "="+k[i-1]+ " ∈ C, en la operación S"+str(i-1)+"/C\n")
+      archivo.write(str(v[i]) + " pertenece S"+str(i)+ ", porque v" +str(i-1) +"=" + v[i-1] + " pertenece " + " S" + str(i-1)+ " y k"+str(i-1)+ "="+k[i-1]+ " 
+      pertenece C, en la operación S"+str(i-1)+"/C\n")
 
 
 
