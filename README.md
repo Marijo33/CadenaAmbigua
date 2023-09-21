@@ -23,6 +23,6 @@ Y en caso de no ser UD determinar una cadena ambigua, mostrando los pasos realis
 
 ## Uso
 
-1. Coloca tu código o lenguaje en el archivo `in.txt`.
+1. Coloca tu código o lenguaje del cual desea verificar si es U.D, y en caso de que no, obtener una cadena ambigua en el archivo `in.txt` como se muestra en el mismo archivo.
 2. Ejecuta el programa principal (`main.py`)
 3. Comprueba el archivo `out.txt` para conocer el resultado y los detalles del proceso de verificación.
